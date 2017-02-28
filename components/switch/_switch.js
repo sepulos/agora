@@ -17,7 +17,10 @@ var lang = (function () {
 
   var switchClass = function () {
     $btn.hover(function () {
-      $(this).toggleClass('-act');
+      var $div = $(this);
+      $(this).addClass('-act');
+      $btn.not($div).removeClass('-act');
+      return false;
 
     });
   };

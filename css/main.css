@@ -1599,6 +1599,10 @@ footer:after {
   left: 0;
 }
 
+.switch__btn:hover {
+  color: white;
+}
+
 .switch__btn.-act {
   color: #fff;
   z-index: 1;
