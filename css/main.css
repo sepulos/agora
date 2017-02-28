@@ -1380,6 +1380,12 @@ footer:after {
   border-bottom: 4px solid purple;
 }
 
+@media (max-width: 811px) {
+  .menu__navItem:hover {
+    border-bottom: 4px solid transparent;
+  }
+}
+
 .menu__navLeft {
   float: left;
 }
