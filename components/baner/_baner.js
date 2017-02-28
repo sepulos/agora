@@ -1,10 +1,28 @@
 var banerBig = (function () {
 
   //catche DOM
-  var $baner = $('.baner');
-  var $slider = $baner.find('.baner__slider');
+  var $baner;
+  var $slider;
 
   //bind events
+
+  var init = function () {
+    $baner = $('.baner');
+
+    if ($baner.length > 0) {
+      $slider = $baner.find('.baner__slider');
+
+      bindEvents();
+    }
+  };
+
+  $(document).ready(function () {
+    init();
+  });
+
+  var bindEvents = function () {
+    slick();
+  };
 
   function slick() {
     $slider.waitForImages(function () {
@@ -19,17 +37,4 @@ var banerBig = (function () {
     });
 
   }
-
-  var init = function () {
-    slick();
-
-  };
-
-
-  $(document).ready(function () {
-    slick();
-  });
-
-
-
 })();

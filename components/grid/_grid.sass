@@ -25,4 +25,20 @@ header
   z-index: +2
   position: relative
 
+.col
+  +clearfix
+
+.col33
+  width: 33.33%
+  float: left
+  +PHONE_ONLY
+    width: 100%
+
+.col66
+  width: 66.66%
+  float: left
+  +PHONE_ONLY
+    width: 100%
+
 footer
+  +clearfix

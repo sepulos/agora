@@ -1,0 +1,28 @@
+extends _layout.pug
+
+block content
+  .col
+    include ../components/menu/_menu
+
+  .back
+    include ../components/baner/_baner
+
+  .col
+    include ../components/subMenu/_subMenu
+
+  .col(id="video")
+    include ../components/video/_video
+  .col(id="info")
+    include ../components/info/_info
+
+  .col(id="foto")
+    include ../components/foto/_foto
+
+  .col(id="cast")
+    include ../components/cast/_cast
+  .col(id="wins")
+    include ../components/awards/_awards
+  .col(id="media")
+    include ../components/media/_media
+  .col(id="download")
+    include ../components/download/_download

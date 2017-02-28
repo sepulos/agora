@@ -8,7 +8,8 @@ module.exports = function(grunt) {
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/lightgallery/dist/js/lightgallery.js',
     'node_modules/slick-carousel/slick/slick.js',
-    'node_modules/jquery.waitforimages/dist/jquery.waitforimages.min.js'
+    'node_modules/jquery.waitforimages/dist/jquery.waitforimages.min.js',
+    'libraries/jquery.sticky.js'
 
   ];
 

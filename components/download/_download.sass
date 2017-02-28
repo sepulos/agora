@@ -1,0 +1,28 @@
+.download
+  +clearfix
+  padding-bottom: 40px
+
+  &__title
+    +clearfix
+    width: 100%
+
+  &__file
+    float: right
+
+    &:hover
+      opacity: 0.6
+
+  &__pdf
+    float: left
+    margin: 8px
+    +PHONE_ONLY
+      width: 20px
+      height: 20px
+
+  &__text
+    float: left
+    font-size: 26px
+    font-weight: 700
+    opacity: 0.8
+    +PHONE_ONLY
+      font-size: 20px

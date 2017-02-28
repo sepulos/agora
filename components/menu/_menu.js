@@ -1,13 +1,32 @@
 var menu = (function () {
 
   //catche DOM
-
-  var $menu = $('.menu');
-  var $nav = $menu.find('.menu__nav');
-  var $share = $menu.find('.menu__share');
-  var $bars = $menu.find('.menu__bars');
+  var $menu;
+  var $nav;
+  var $bars;
 
   //bind events
+
+  var init = function () {
+    $menu = $('.menu');
+    if ($menu.length > 0) {
+      $nav = $menu.find('.menu__nav');
+      $bars = $menu.find('.menu__bars');
+
+      bindEvents();
+    }
+  };
+
+  $(document).ready(function () {
+    init();
+  });
+
+
+  var bindEvents = function () {
+    menuDisplay();
+    menuClick();
+    scroll();
+  };
 
   var menuDisplay = function () {
     $( window ).resize(function () {
@@ -15,14 +34,18 @@ var menu = (function () {
     });
   };
 
+  var scroll = function () {
+    $menu.sticky({topSpacing:0, zIndex:10});
+  };
+
   var menuResize = function () {
     if ($( window ).width() >= 812) {
       $nav.show();
-      $share.show();
+      $bars.hide();
     }
     else {
       $nav.hide();
-      $share.hide();
+      $bars.show();
     }
   };
 
@@ -36,25 +59,7 @@ var menu = (function () {
 
   var menuToggle = function () {
     $nav.slideToggle(300);
-    $share.slideToggle(300);
   };
-
-
-
-  var init = function () {
-    menuDisplay();
-    menuClick();
-
-
-  };
-
-  $(document).ready(function () {
-    init();
-  });
-
-  return {
-    init : init
-  }
 
 
 })();

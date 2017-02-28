@@ -1,5 +1,9 @@
 .sectionTitle
   +clearfix
+  padding: 40px 0
+  margin-top: 60px
+  +TAB_MAX
+    margin: 0
 
   &__title
     color: white
@@ -10,7 +14,15 @@
     +clearfix
     &.-black
       color: black
+    +TAB_MAX
+      font-size: 34px
+    +PHONE_ONLY
+      font-size: 26px
+    +PHONE_ONLY_480
+      font-size: 20px
 
   &__border
     width: 100px
-    border-bottom: 5px solid #A80B4F
+    border-bottom: 5px solid $red
+    +TAB_MAX
+      width: 50px

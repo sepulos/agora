@@ -2,8 +2,10 @@
 
   &__item
     width: 100%
-    height: 100vh
+    height: calc(100vh - 60px)
     position: relative
+    +TAB_MAX
+      height: auto
 
   &__img
     width: 100%
@@ -13,6 +15,9 @@
     position: absolute
     bottom: 60px
     left: 60px
+    +TAB_MAX
+      bottom: 30px
+      left: 30px
 
   &__contentTitle
     font-size: 100px
@@ -20,6 +25,8 @@
     color: white
     text-align: left
     line-height: 80px
+    +TAB_MAX
+      font-size: 50px
 
   &__contentText
     font-size: 36px
@@ -27,3 +34,5 @@
     font-weight: 700
     color: white
     text-align: left
+    +TAB_MAX
+      font-size: 20px

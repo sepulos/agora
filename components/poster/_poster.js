@@ -1,6 +1,7 @@
 var gallery = (function () {
 
   //catche DOM
+  var $poster;
   var $posterBox;
   var $item;
 
@@ -8,7 +9,7 @@ var gallery = (function () {
 
 
   var init = function () {
-    var $poster = $('.poster');
+    $poster = $('.poster');
     if ($poster.length > 0) {
       $posterBox = $poster.find('.poster__box');
       $item = $poster.find('.poster__boxItem');
@@ -45,9 +46,7 @@ var gallery = (function () {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
         arrows: true,
-        autoplaySpeed: 2000,
         prevArrow: '.poster .poster__prev ',
         nextArrow: '.poster .poster__next '
       });

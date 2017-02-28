@@ -1,0 +1,27 @@
+.listInfo
+  padding: 30px 20px
+  +clearfix
+  +TAB_MAX
+    padding: 30px 5px 30px 20px
+  +PHONE_ONLY
+    padding: 10px 0
+
+  &__box
+    line-height: 18px
+    padding: 5px 0
+    +PHONE_ONLY
+      float: left
+      width: 50%
+      padding: 20px
+
+  &__title
+    font-size: 16px
+    font-weight: 700
+    +LAPTOP_MAX
+      font-size: 14px
+
+  &__text
+    font-size: 16px
+    opacity: 0.8
+    +LAPTOP_MAX
+      font-size: 12px

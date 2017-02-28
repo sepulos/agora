@@ -1,15 +1,30 @@
 .poster
   position: relative
-  margin: 10px
+  padding: 10px
   +clearfix
 
   &__boxItem
     width: 100%
     height: auto
     float: left
+    position: relative
+    transition: opacity 1.6s
+    +clearfix
 
     &:hover
-      opacity: 0.6
+      opacity: 0.8
+      .poster__lupa
+        visibility: visible
+        transform: rotate(360deg) scale(8)
+
+  &__lupa
+    height: 10px
+    width: 10px
+    position: absolute
+    top: 50%
+    left: 50%
+    visibility: hidden
+    transition: visibility .6s, transform 1s
 
   &__boxImg
     width: 100%
@@ -39,7 +54,6 @@
     opacity: 0.8
     cursor: pointer
     border: 0 solid transparent
-    z-index: 100
 
   &__prev
     position: absolute
@@ -52,4 +66,3 @@
     opacity: 0.8
     cursor: pointer
     border: 0 solid transparent
-    z-index: 100
