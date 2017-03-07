@@ -2,25 +2,33 @@ var lang = (function () {
 
   var $switch;
   var $btn;
+  var $btn2;
 
   var init = function () {
     $switch = $('.switch');
     if ($switch.length > 0 ) {
-      $btn = $switch.find('.switch__btn');
+      $btn = $switch.find('.switch__en');
+      $btn2 = $switch.find('.switch__pl');
+
+
     }
   };
 
   $(document).ready(function () {
     init();
     switchClass();
+    switchClassPl();
   });
 
   var switchClass = function () {
     $btn.hover(function () {
-      var $div = $(this);
-      $(this).addClass('-act');
-      $btn.not($div).removeClass('-act');
-      return false;
+      $btn2.toggleClass('-red');
+
+    });
+  };
+  var switchClassPl = function () {
+    $btn2.hover(function () {
+      $btn.toggleClass('-white');
 
     });
   };

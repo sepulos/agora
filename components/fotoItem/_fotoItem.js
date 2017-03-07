@@ -9,19 +9,16 @@ var gallery = (function () {
   var init = function () {
     $foto = $('.fotoItem');
     if ($foto.length > 0) {
-      $box = $foto.find('.fotoItem_box');
+      $box = $foto.find('.fotoItem__box');
 
-      bindEvents();
     }
   };
 
   $(document).ready(function () {
     init();
+    lightBox();
   });
 
-  var bindEvents = function () {
-    lightBox();
-  };
 
   var lightBox = function () {
     $box.lightGallery({

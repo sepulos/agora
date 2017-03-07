@@ -4,6 +4,7 @@ var gallery = (function () {
   var $poster;
   var $posterBox;
   var $item;
+  var $all;
 
   //bind events
 
@@ -13,6 +14,7 @@ var gallery = (function () {
     if ($poster.length > 0) {
       $posterBox = $poster.find('.poster__box');
       $item = $poster.find('.poster__boxItem');
+      $all = $poster.find('.poster__all');
 
       bindEvents();
     }
@@ -20,11 +22,21 @@ var gallery = (function () {
 
   $(document).ready(function () {
     init();
+    all();
   });
 
   var bindEvents = function () {
     lightBox();
     slickGallery();
+  };
+
+  var all = function () {
+
+    var items = $item.length;
+
+    var nowy = $all.html(' / ' + items);
+
+
   };
 
 
@@ -42,7 +54,8 @@ var gallery = (function () {
       $posterBox.slick({
         infinite: true,
         selector: $item,
-        dots: false,
+        dots: true,
+        dotsClass: 'poster__controllers',
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,

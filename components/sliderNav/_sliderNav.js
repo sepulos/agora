@@ -12,7 +12,8 @@ var banerBig = (function () {
     if ($slider.length > 0) {
       $nav = $slider.find('.sliderNav__nav');
 
-      bindEvents();
+      slickNav();
+
     }
   };
 
@@ -20,9 +21,7 @@ var banerBig = (function () {
     init();
   });
 
-  var bindEvents = function () {
-    slickNav();
-  };
+
 
   function slickNav() {
     $nav.waitForImages(function () {

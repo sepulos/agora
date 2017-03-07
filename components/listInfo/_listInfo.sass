@@ -8,7 +8,7 @@
 
   &__box
     line-height: 18px
-    padding: 5px 0
+    padding: 10px 0
     +PHONE_ONLY
       float: left
       width: 50%
@@ -19,9 +19,13 @@
     font-weight: 700
     +LAPTOP_MAX
       font-size: 14px
+    +PHONE_ONLY
+      font-size: 18px
 
   &__text
     font-size: 16px
     opacity: 0.8
     +LAPTOP_MAX
       font-size: 12px
+    +PHONE_ONLY
+      font-size: 18px

@@ -14,7 +14,8 @@ var banerBig = (function () {
       $for = $slider.find('.slider__for');
       $controls = $slider.find('.container');
 
-      bindEvents();
+      slickFor();
+
     }
   };
 
@@ -22,9 +23,6 @@ var banerBig = (function () {
     init();
   });
 
-  var bindEvents = function () {
-    slickFor();
-  };
 
   function slickFor() {
     $for.waitForImages(function () {
@@ -35,7 +33,9 @@ var banerBig = (function () {
         prevArrow: '<div class="slider__prev"></div> ',
         nextArrow: '<div class="slider__next"></div> ',
         appendArrows: $controls,
-        asNavFor: '.sliderNav__nav'
+        asNavFor: '.sliderNav__nav',
+        autoplay: true,
+        autoplaySpeed: 2500
       });
     });
 

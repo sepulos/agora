@@ -26,18 +26,17 @@
   <body>
     <div class="col">
       <div class="menu">
-        <div class="container">
+        <div class="container"><a class="menu__logoPhone" href="main.html">
+            <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a>
           <div class="menu__bars" type="button"><i class="fa fa-bars" aria-hidden="true"></i></div>
           <div class="menu__nav">
-            <div class="menu__navLeft"><a class="menu__navItem" href="distribution.html">FILMY W DYSTRYBUCJI</a><a class="menu__navItem" href="production.html">FILMY W PRODUKCJI</a></div>
-            <div class="menu__navRight"><a class="menu__navItem" href="news.html">AKTUALNOŚCI</a><a class="menu__navItem" href="producent.html">PRODUCENT</a><a class="menu__navItem" href="contactMap.html">KONTAKT</a>
+            <div class="menu__navLeft"><a class="menu__navItem" href="distribution.html">FILMY W DYSTRYBUCJI</a><a class="menu__navItem" href="production.html">FILMY W PRODUKCJI</a><a class="menu__logo" href="main.html">
+                <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a><a class="menu__navItem" href="news.html">AKTUALNOŚCI</a><a class="menu__navItem" href="producent.html">PRODUCENT</a><a class="menu__navItem" href="contactMap.html">KONTAKT</a>
               <div class="menu__lang">
-                <div class="switch"><a class="switch__btn -act" href="#">EN</a><a class="switch__btn" href="#">PL</a></div>
+                <div class="switch"><a class="switch__en" href="#">EN</a><a class="switch__pl" href="#">PL</a></div>
               </div>
             </div>
           </div>
-          <div class="menu__navCenter"><a class="menu__logo" href="main.html">
-              <div class="logo"><img class="logo__img" src="components/logo/src/logo.jpg" alt="Logo strony"></div></a></div>
         </div>
       </div>
     </div>
@@ -82,15 +81,43 @@
             </div>
           </div><a class="video__btn" href="#">
             <div class="video__btnTriler">Zwiastun nr 1</div></a>
-          <div class="video__yt">
+          <div class="video__yt" data-video="1">
             <iframe class="video__film" src="https://www.youtube.com/embed/urwNt8Cf64A" frameborder="0" allowfullscreen></iframe>
           </div>
-          <div class="video__triler"><a class="video__trilerItem" href="#">
-              <div class="video__trilerText">ZWIASTUN NR 1</div></a><a class="video__trilerItem" href="#"><img class="video__ghost" src="components/video/src/play.jpg" alt="play">
-              <div class="video__trilerText">ZWIASTUN NR 2</div></a><a class="video__trilerItem" href="#">
-              <div class="video__trilerText">ZWIASTUN NR 3</div></a><a class="video__trilerItem" href="#">
-              <div class="video__trilerText">TEASER NR 1</div></a><a class="video__trilerItem" href="#">
-              <div class="video__trilerText">TEASER NR 2</div></a></div>
+          <div class="video__yt" data-video="2">
+            <iframe class="video__film" src="https://www.youtube.com/embed/4FS9qT7KLMI" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video__yt" data-video="3">
+            <iframe class="video__film" src="https://www.youtube.com/embed/KRgYXAMXg84" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video__yt" data-video="4">
+            <iframe class="video__film" src="https://www.youtube.com/embed/z9kZJEYlhTU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video__yt" data-video="5">
+            <iframe class="video__film" src="https://www.youtube.com/embed/RS0MikFioN8" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video__triler">
+            <div class="video__trilerItem" data-video="1">
+              <div class="video__trilerText">ZWIASTUN NR 1</div>
+              <div class="video__play"></div>
+            </div>
+            <div class="video__trilerItem" data-video="2">
+              <div class="video__trilerText">ZWIASTUN NR 2</div>
+              <div class="video__play"></div>
+            </div>
+            <div class="video__trilerItem" data-video="3">
+              <div class="video__trilerText">ZWIASTUN NR 3</div>
+              <div class="video__play"></div>
+            </div>
+            <div class="video__trilerItem" data-video="4">
+              <div class="video__trilerText">TEASER NR 1</div>
+              <div class="video__play"></div>
+            </div>
+            <div class="video__trilerItem" data-video="5">
+              <div class="video__trilerText">TEASER NR 2</div>
+              <div class="video__play"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -104,10 +131,21 @@
               </div>
             </div>
           </div>
-          <div class="info__contentPoster">
+          <div class="info__poster">
             <div class="poster">
-              <div class="poster__box"><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;"><img class="poster__lupa" src="components/poster/src/lupa.png" alt="lupa"><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;"><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;"><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a></div>
-              <div class="poster__controllers">
+              <div class="poster__box"><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a><a class="poster__boxItem" href="components/poster/src/poster1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="poster__lupa fa fa-search-plus" aria-hidden="true"></div><img class="poster__boxImg" src="components/poster/src/poster1.jpg" alt="galeria"></a></div>
+              <div class="poster__licz">
+                <div class="poster__nav">
+                  <div class="poster__text">PLAKAT</div>
+                  <div class="poster__controllers"></div>
+                  <div class="poster__all"></div>
+                </div>
                 <div class="poster__prev"><</div>
                 <div class="poster__next">></div>
               </div>
@@ -155,7 +193,7 @@
               </div>
               <div class="info__btn">
                 <div class="btn"><a class="btn__link" href="#">
-                    <div class="btn__text">CZYTAJ WIĘCEJ >></div></a></div>
+                    <div class="btn__text">CZYTAJ WIĘCEJ &gt; &gt;</div></a></div>
               </div>
             </div>
           </div>
@@ -174,23 +212,29 @@
           </div>
           <div class="foto__item">
             <div class="fotoItem">
-              <div class="fotoItem_box"><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
+              <div class="fotoItem__box"><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
-                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto2.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto2.jpg" alt="galeria">
+                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
-                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto3.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto3.jpg" alt="galeria">
+                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
-                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto4.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto4.jpg" alt="galeria">
+                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
-                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto5.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto5.jpg" alt="galeria">
+                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
-                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto6.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
-                  <div class="fotoItem__img"><img class="fotoItem__lupa" src="components/fotoItem/src/lupa.png" alt="lupa"><img class="fotoItem__boxImg" src="components/fotoItem/src/foto6.jpg" alt="galeria">
+                  </div></a><a class="fotoItem__boxItem" href="components/fotoItem/src/foto1.jpg" data-sub-html="&lt;h4&gt;Fading Light&lt;/h4&gt;&lt;p&gt;Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.&lt;/p&gt;">
+                  <div class="fotoItem__img">
+                    <div class="fotoItem__lupa fa fa-search-plus" aria-hidden="true"></div><img class="fotoItem__boxImg" src="components/fotoItem/src/foto1.jpg" alt="galeria">
                     <div class="fotoItem__content">FOTO LOREM IPSUM</div>
                   </div></a></div>
             </div>
@@ -198,7 +242,7 @@
           <div class="foto__item">
             <div class="foto__btn">
               <div class="btn"><a class="btn__link" href="#">
-                  <div class="btn__text">ZOBACZ WIĘCEJ >></div></a></div>
+                  <div class="btn__text">ZOBACZ WIĘCEJ &gt; &gt;</div></a></div>
             </div>
           </div>
         </div>
@@ -311,66 +355,72 @@
               </div>
             </div>
           </div>
-          <div class="cast__title">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="crew">
+        <div class="container">
+          <div class="crew__title">
             <div class="sectionTitle">
               <div class="sectionTitle__title -black">TWÓRCY
                 <div class="sectionTitle__border"></div>
               </div>
             </div>
           </div>
-          <div class="cast__content">
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">ŁUKASZ PALKOWSKI</div>
-                <div class="cast__crewText">/ REŻYSER /</div>
+          <div class="crew__content">
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">ŁUKASZ PALKOWSKI</div>
+                <div class="crew__crewText">/ REŻYSER /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">JACEK TURKIEWICZ</div>
-                <div class="cast__crewText">/ DEKORATOR WNĘTRZ /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">JACEK TURKIEWICZ</div>
+                <div class="crew__crewText">/ DEKORATOR WNĘTRZ /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">KRZYSZTOF RAK</div>
-                <div class="cast__crewText">/ SCENARIUSZ /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">KRZYSZTOF RAK</div>
+                <div class="crew__crewText">/ SCENARIUSZ /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">WOJCIECH ŻOGAŁA</div>
-                <div class="cast__crewText">/ SCENOGRAFIA /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">WOJCIECH ŻOGAŁA</div>
+                <div class="crew__crewText">/ SCENOGRAFIA /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">PIOTR SOBOCIŃSKI JR.</div>
-                <div class="cast__crewText">/ ZDJĘCIA /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">PIOTR SOBOCIŃSKI JR.</div>
+                <div class="crew__crewText">/ ZDJĘCIA /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">EWA GRONOWSKA</div>
-                <div class="cast__crewText">/ KOSTIUMY /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">EWA GRONOWSKA</div>
+                <div class="crew__crewText">/ KOSTIUMY /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">BARTOSZ CHAJDECKI</div>
-                <div class="cast__crewText">/ MUZYKA /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">BARTOSZ CHAJDECKI</div>
+                <div class="crew__crewText">/ MUZYKA /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">MAGDALENA CZERWIŃSKA</div>
-                <div class="cast__crewText">/ KOSTIUMY /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">MAGDALENA CZERWIŃSKA</div>
+                <div class="crew__crewText">/ KOSTIUMY /</div>
               </div>
             </div>
-            <div class="cast__item">
-              <div class="cast__crew">
-                <div class="cast__crewTitle">JAROSŁAW BARZAN</div>
-                <div class="cast__crewText">/ MONTAŻ /</div>
+            <div class="crew__item">
+              <div class="crew__crew">
+                <div class="crew__crewTitle">JAROSŁAW BARZAN</div>
+                <div class="crew__crewText">/ MONTAŻ /</div>
               </div>
             </div>
           </div>
@@ -392,7 +442,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
           <div class="awards__item">
@@ -400,7 +450,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
           <div class="awards__item">
@@ -408,7 +458,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
           <div class="awards__item">
@@ -416,7 +466,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
           <div class="awards__item">
@@ -424,7 +474,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
           <div class="awards__item">
@@ -432,7 +482,7 @@
               <div class="awardsWin__content">
                 <div class="awardsWin__contentTitle">39 FESTIWAL FILMOWY W GDYNII</div>
                 <div class="awardsWin__contentText">ZŁOTE LWY</div>
-              </div><img class="awardsWin__img" src="components/awardsWin/src/leafR.png" alt="liść">
+              </div><img class="awardsWin__flip" src="components/awardsWin/src/leafL.png" alt="liść">
             </div>
           </div>
         </div>
@@ -461,7 +511,7 @@
               <div class="mediaItem__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo eu nunc fringilla pulvinar. Maecenas cursus nisi vel rutrum mattis. Integer pharetra finibus mauris, varius scelerisque magna ultrices a. Aenean luctus dolor lacus, sit amet placerat lacus blandit vitae. Quisque nibh libero, vulputate at hendrerit nec, placerat suscipit nisi. Sed est tellus, scelerisque ut suscipit porttitor</div>
               <div class="mediaItem__btn">
                 <div class="btn"><a class="btn__link" href="#">
-                    <div class="btn__text">CZYTAJ WIĘCEJ >></div></a></div>
+                    <div class="btn__text">CZYTAJ WIĘCEJ &gt; &gt;</div></a></div>
               </div>
             </div>
           </div>
@@ -478,7 +528,7 @@
               <div class="mediaItem__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo eu nunc fringilla pulvinar. Maecenas cursus nisi vel rutrum mattis. Integer pharetra finibus mauris, varius scelerisque magna ultrices a. Aenean luctus dolor lacus, sit amet placerat lacus blandit vitae. Quisque nibh libero, vulputate at hendrerit nec, placerat suscipit nisi. Sed est tellus, scelerisque ut suscipit porttitor</div>
               <div class="mediaItem__btn">
                 <div class="btn"><a class="btn__link" href="#">
-                    <div class="btn__text">CZYTAJ WIĘCEJ >></div></a></div>
+                    <div class="btn__text">CZYTAJ WIĘCEJ &gt; &gt;</div></a></div>
               </div>
             </div>
           </div>
@@ -495,13 +545,13 @@
               <div class="mediaItem__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo eu nunc fringilla pulvinar. Maecenas cursus nisi vel rutrum mattis. Integer pharetra finibus mauris, varius scelerisque magna ultrices a. Aenean luctus dolor lacus, sit amet placerat lacus blandit vitae. Quisque nibh libero, vulputate at hendrerit nec, placerat suscipit nisi. Sed est tellus, scelerisque ut suscipit porttitor</div>
               <div class="mediaItem__btn">
                 <div class="btn"><a class="btn__link" href="#">
-                    <div class="btn__text">CZYTAJ WIĘCEJ >></div></a></div>
+                    <div class="btn__text">CZYTAJ WIĘCEJ &gt; &gt;</div></a></div>
               </div>
             </div>
           </div>
           <div class="media__btn">
             <div class="btn"><a class="btn__link" href="#">
-                <div class="btn__text">ZOBACZ WIĘCEJ >></div></a></div>
+                <div class="btn__text">ZOBACZ WIĘCEJ &gt; &gt;</div></a></div>
           </div>
         </div>
       </div>

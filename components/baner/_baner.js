@@ -12,17 +12,14 @@ var banerBig = (function () {
     if ($baner.length > 0) {
       $slider = $baner.find('.baner__slider');
 
-      bindEvents();
     }
   };
 
   $(document).ready(function () {
     init();
-  });
-
-  var bindEvents = function () {
     slick();
-  };
+
+  });
 
   function slick() {
     $slider.waitForImages(function () {
@@ -32,7 +29,7 @@ var banerBig = (function () {
         arrows: false,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2500
       });
     });
 

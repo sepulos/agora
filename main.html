@@ -26,18 +26,17 @@
   <body>
     <div class="col">
       <div class="menu">
-        <div class="container">
+        <div class="container"><a class="menu__logoPhone" href="main.html">
+            <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a>
           <div class="menu__bars" type="button"><i class="fa fa-bars" aria-hidden="true"></i></div>
           <div class="menu__nav">
-            <div class="menu__navLeft"><a class="menu__navItem" href="distribution.html">FILMY W DYSTRYBUCJI</a><a class="menu__navItem" href="production.html">FILMY W PRODUKCJI</a></div>
-            <div class="menu__navRight"><a class="menu__navItem" href="news.html">AKTUALNOŚCI</a><a class="menu__navItem" href="producent.html">PRODUCENT</a><a class="menu__navItem" href="contactMap.html">KONTAKT</a>
+            <div class="menu__navLeft"><a class="menu__navItem" href="distribution.html">FILMY W DYSTRYBUCJI</a><a class="menu__navItem" href="production.html">FILMY W PRODUKCJI</a><a class="menu__logo" href="main.html">
+                <div class="logo"><img class="logo__img" src="components/logo/src/logo.png" alt="Logo strony"></div></a><a class="menu__navItem" href="news.html">AKTUALNOŚCI</a><a class="menu__navItem" href="producent.html">PRODUCENT</a><a class="menu__navItem" href="contactMap.html">KONTAKT</a>
               <div class="menu__lang">
-                <div class="switch"><a class="switch__btn -act" href="#">EN</a><a class="switch__btn" href="#">PL</a></div>
+                <div class="switch"><a class="switch__en" href="#">EN</a><a class="switch__pl" href="#">PL</a></div>
               </div>
             </div>
           </div>
-          <div class="menu__navCenter"><a class="menu__logo" href="main.html">
-              <div class="logo"><img class="logo__img" src="components/logo/src/logo.jpg" alt="Logo strony"></div></a></div>
         </div>
       </div>
     </div>
@@ -104,6 +103,16 @@
               </div>
             </div>
           </div>
+          <div class="slider__item"><img class="slider__img" src="components/slider/src/baner.jpg" alt="banner">
+            <div class="container">
+              <div class="slider__content">
+                <div class="slider__contentTitle">BOGOWIE</div>
+                <div class="slider__contentText">PREMIERA 14.03.2015</div><a class="slider__btn" href="#">
+                  <div class="slider__box">ZOBACZ WIĘCEJ</div>
+                  <div class="slider__troj"></div></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="slider__controllers">
           <div class="container"></div>
@@ -113,160 +122,256 @@
     <div class="back">
       <div class="sliderNav">
         <div class="sliderNav__nav">
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
-          <div class="sliderNav__box">
-            <div class="sliderNav__boxItem">
-              <div class="sliderItem"><a class="sliderItem__box" href="film.html">
-                  <div class="sliderItem__boxItem">
-                    <div class="sliderItem__ghost"></div>
-                    <div class="sliderItem__ghostInfo">
-                      <div class="sliderItem__ghostBorder"></div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">REŻYSERIA:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">LOREM IPSUM
-                        <div class="sliderItem__ghostLight">PRODUCENT:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">DRAMAT BIBLIOGRAFICZNY
-                        <div class="sliderItem__ghostLight">GATUNEK:</div>
-                      </div>
-                      <div class="sliderItem__ghostBold">121 MIN
-                        <div class="sliderItem__ghostLight">DŁUGOŚĆ:</div>
-                      </div>
-                    </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
-                    <div class="sliderItem__border"></div>
-                    <div class="sliderItem__content">BOGOWIE</div>
-                    <div class="sliderItem__text">PREMIERA 20.10.2016</div>
-                  </div></a></div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner2.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+            </div>
+          </div>
+          <div class="sliderItem">
+            <div class="sliderItem__box">
+              <div class="sliderItem__hoverInfo">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
+              <div class="sliderItem__content">
+                <div class="sliderItem__hoverBorder"></div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">REŻYSERIA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUCENT:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">GATUNEK:</div>
+                  <div class="sliderItem__hoverBold">DRAMAT</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PRODUKCJA:</div>
+                  <div class="sliderItem__hoverBold">POLSKA, 2015</div>
+                </div>
+                <div class="sliderItem__contentBox">
+                  <div class="sliderItem__hoverLight">PREMIERA:</div>
+                  <div class="sliderItem__hoverBold">LOREM IPSUM</div>
+                </div>
+              </div><img class="sliderItem__boxImg" src="components/sliderItem/src/baner.jpg" alt="galeria">
+              <div class="sliderItem__border"></div>
+              <div class="sliderItem__more">
+                <div class="sliderItem__title">BOGOWIE</div>
+                <div class="sliderItem__text">PREMIERA 20.10.2016</div>
+              </div>
             </div>
           </div>
         </div>

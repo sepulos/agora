@@ -1,5 +1,7 @@
 .menu
   .container
+    a.menu__logoPhone(href="main.html")
+      include ../logo/_logo
 
     .menu__bars(type="button")
       i.fa.fa-bars(aria-hidden="true")
@@ -8,15 +10,11 @@
       .menu__navLeft
         a.menu__navItem(href="distribution.html") FILMY W DYSTRYBUCJI
         a.menu__navItem(href="production.html") FILMY W PRODUKCJI
-
-      .menu__navRight
+        a.menu__logo(href="main.html")
+          include ../logo/_logo
         a.menu__navItem(href="news.html") AKTUALNOŚCI
         a.menu__navItem(href="producent.html") PRODUCENT
         a.menu__navItem(href="contactMap.html") KONTAKT
 
         .menu__lang
           include ../switch/_switch
-
-    .menu__navCenter
-      a.menu__logo(href="main.html")
-        include ../logo/_logo

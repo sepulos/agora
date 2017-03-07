@@ -4,7 +4,7 @@
 
   &__item
     width: 100%
-    height: calc(100vh - 60px)
+    height: auto
     position: relative
     +clearfix
     +PHONE_ONLY
@@ -16,8 +16,13 @@
 
   &__content
     position: absolute
-    bottom: 60px
+    bottom: 120px
     left: 60px
+    +LAPTOP_MAX
+      bottom: 20px
+    +PHONE_ONLY
+      bottom: 10px
+      left: 10px
 
   &__contentTitle
     font-size: 100px
@@ -25,6 +30,8 @@
     color: white
     text-align: left
     line-height: 80px
+    +LAPTOP_MAX
+      font-size: 75px
     +PHONE_ONLY
       font-size: 50px
       line-height: 40px
@@ -38,43 +45,47 @@
     font-weight: 700
     color: white
     text-align: left
+    +LAPTOP_MAX
+      font-size: 28px
     +PHONE_ONLY
       font-size: 20px
     +PHONE_ONLY_480
       font-size: 16px
 
   &__box
-    font-size: 30px
+    font-size: 20px
     font-weight: 700
-    padding: 20px 30px
+    padding: 25px 50px
     color: white
     background: $red
     float: left
     margin: 10px
+    +LAPTOP_MAX
+      padding: 10px 20px
     +PHONE_ONLY
       font-size: 20px
-      padding: 10px 20px
     +PHONE_ONLY_480
       font-size: 16px
       margin: 10px 0
 
-  &__btn
+    .slider__btn:hover &
+      background: white
+      color: $red
 
-    &:hover
-      .slider__box
-        background: white
-        color: $red
-      .slider__troj
-        border-left: 40px solid white
+  &__btn
 
   &__troj
     width: 0
     height: 0
-    margin-top: 12px
+    margin-top: 10px
     border-top: 40px solid transparent
     border-bottom: 40px solid transparent
     border-left: 40px solid $red
     float: left
+    +LAPTOP_MAX
+      border-top: 25px solid transparent
+      border-bottom: 25px solid transparent
+      border-left: 25px solid $red
     +PHONE_ONLY
       border-top: 25px solid transparent
       border-bottom: 25px solid transparent
@@ -85,6 +96,9 @@
       border-bottom: 20px solid transparent
       border-left: 20px solid $red
       margin: 12px 10px
+
+    .slider__btn:hover &
+      border-left: 40px solid white
 
   &__controllers
     position: absolute
@@ -109,7 +123,7 @@
       visibility: hidden
 
     &:hover
-      opacity: 0.7
+      transform: scale(1.5)
 
   &__prev
     position: absolute
@@ -128,4 +142,4 @@
       visibility: hidden
 
     &:hover
-      opacity: 0.7
+      transform: scale(1.5)

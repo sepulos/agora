@@ -1,22 +1,36 @@
+-var title='VIDEO';
+
 .video
   .container
     .video__top
-      include ../sectionTitle/_sectionTitleVideo
+      include ../sectionTitle/_sectionTitle-white
 
     a.video__btn(href="#")
       .video__btnTriler Zwiastun nr 1
-    .video__yt
+    .video__yt(data-video="1")
       iframe.video__film(src="https://www.youtube.com/embed/urwNt8Cf64A", frameborder="0", allowfullscreen)
+    .video__yt(data-video="2")
+      iframe.video__film(src="https://www.youtube.com/embed/4FS9qT7KLMI" frameborder="0" allowfullscreen)
+    .video__yt(data-video="3")
+      iframe.video__film(src="https://www.youtube.com/embed/KRgYXAMXg84" frameborder="0" allowfullscreen)
+    .video__yt(data-video="4")
+      iframe.video__film(src="https://www.youtube.com/embed/z9kZJEYlhTU" frameborder="0" allowfullscreen)
+    .video__yt(data-video="5")
+      iframe.video__film(src="https://www.youtube.com/embed/RS0MikFioN8" frameborder="0" allowfullscreen)
 
     .video__triler
-      a.video__trilerItem(href="#")
+      .video__trilerItem(data-video="1")
         .video__trilerText ZWIASTUN NR 1
-      a.video__trilerItem(href="#")
-        img.video__ghost(src="components/video/src/play.jpg" alt="play")
+        .video__play
+      .video__trilerItem(data-video="2")
         .video__trilerText ZWIASTUN NR 2
-      a.video__trilerItem(href="#")
+        .video__play
+      .video__trilerItem(data-video="3")
         .video__trilerText ZWIASTUN NR 3
-      a.video__trilerItem(href="#")
+        .video__play
+      .video__trilerItem(data-video="4")
         .video__trilerText TEASER NR 1
-      a.video__trilerItem(href="#")
+        .video__play
+      .video__trilerItem(data-video="5")
         .video__trilerText TEASER NR 2
+        .video__play

@@ -2,6 +2,7 @@
   height: auto
   background: black
   +clearfix
+  padding-bottom: 65px
 
   &__top
     width: 100%
@@ -15,10 +16,13 @@
 
   &__btnTriler
     float: right
-    padding: 5px 10px
+    padding: 5px 65px
     font-size: 18px
     background: #A80B4F
     color: white
+    +TAB_ONLY_880
+      padding: 5px 30px
+      font-size: 16px
 
     &:hover
       background: white
@@ -31,6 +35,8 @@
     height: 0
     overflow: hidden
     max-width: 100%
+    display: none
+    margin-bottom: 20px
 
   &__film
     position: absolute
@@ -45,6 +51,7 @@
     float: left
     position: relative
     padding: 0 25px
+    cursor: pointer
     +TAB_MAX
       float: left
       width: 33.33%
@@ -54,24 +61,23 @@
     +PHONE_ONLY_480
       width: 100%
 
-    &:hover
-      .video__ghost
-        visibility: visible
-
   &__trilerText
     font-size: 18px
     color: white
-    padding: 10px 20px
+    padding: 10px 0
+    margin: 0 20px
     border-bottom: 5px solid transparent
     +LAPTOP_MAX
       font-size: 14px
-      padding: 10px
+      padding: 10px 0
+      margin: 0 10px
 
-    &:hover
-      border-bottom: 5px solid #A80B4F
 
-  &__ghost
+  &__play
     position: absolute
+    background-image: url("../components/video/src/play.png")
+    width: 28px
+    height: 28px
     top: 20%
     left: 0
     visibility: hidden

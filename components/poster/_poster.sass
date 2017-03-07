@@ -13,18 +13,22 @@
 
     &:hover
       opacity: 0.8
-      .poster__lupa
-        visibility: visible
-        transform: rotate(360deg) scale(8)
 
   &__lupa
     height: 10px
     width: 10px
+    font-size: 10px
     position: absolute
+    color: white
     top: 50%
     left: 50%
     visibility: hidden
-    transition: visibility .6s, transform 1s
+    transition: visibility 1s, transform 1.3s, color 2s
+
+    .poster__boxItem:hover &
+      visibility: visible
+      transform: scale(6)
+      color: $red
 
   &__boxImg
     width: 100%
@@ -38,27 +42,75 @@
     padding: 10px 0
     font-weight: 700
 
-  &__controllers
+  &__licz
     position: relative
+    width: 100%
     background: #A80B4F
     height: 55px
+    text-align: center
+
+  &__nav
+    z-index: 2
+
+
+  &__controllers
+    position: absolute
+    left: 50%
+    font-size: 18px
+    padding: 21px 20px
+    +clearfix
+    text-align: center
+    z-index: 3
+
+    button
+      background: $red
+      border: none
+      font-size: 18px
+      color: white
+
+    & li
+      display: none
+      position: absolute
+      bottom: 0
+      left: 50%
+
+      &.slick-active
+       display: block
+
+  &__text
+    padding: 15px
+    font-size: 18px
+    color: white
+    margin-right: 40px
+    display: inline-block
+
+  &__all
+    display: inline-block
+    margin-left: -30px
+    padding: 15px 0
+    color: white
+    font-size: 18px
+    +PC_ONLY
+      padding: 16px 0
 
   &__next
+    font-size: 30px
+    background: #A80B4F
+    color: white
+    padding: 5px 20px
+    opacity: 0.8
+    cursor: pointer
+    border: 0 solid transparent
     position: absolute
     top: 0
     right: 0
-    font-size: 30px
-    background: #A80B4F
-    color: white
-    padding: 5px 20px
-    opacity: 0.8
-    cursor: pointer
-    border: 0 solid transparent
+    z-index: 1
+    +TAB_ONLY_880
+      padding: 5px 5px
+    +PHONE_ONLY
+      padding: 5px 20px
 
   &__prev
-    position: absolute
-    top: 0
-    left: 0
     font-size: 30px
     background: #A80B4F
     color: white
@@ -66,3 +118,13 @@
     opacity: 0.8
     cursor: pointer
     border: 0 solid transparent
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 1
+    +TAB_ONLY_880
+      padding: 5px 5px
+    +PHONE_ONLY
+      padding: 5px 20px
+
+
