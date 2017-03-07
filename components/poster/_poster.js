@@ -16,7 +16,8 @@ var gallery = (function () {
       $item = $poster.find('.poster__boxItem');
       $all = $poster.find('.poster__all');
 
-      bindEvents();
+      lightBox();
+      slickGallery();
     }
   };
 
@@ -25,16 +26,12 @@ var gallery = (function () {
     all();
   });
 
-  var bindEvents = function () {
-    lightBox();
-    slickGallery();
-  };
 
   var all = function () {
 
     var items = $item.length;
 
-    var nowy = $all.html(' / ' + items);
+    var nowy = $all.html('/ ' + items);
 
 
   };

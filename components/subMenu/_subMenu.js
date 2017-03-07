@@ -19,10 +19,10 @@ var gallery = (function () {
 
   $(document).ready(function () {
     init();
+    menuStick();
   });
 
   var bindEvents = function () {
-    menuStick();
     menuClick();
   };
 

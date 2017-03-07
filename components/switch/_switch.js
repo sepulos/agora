@@ -10,15 +10,18 @@ var lang = (function () {
       $btn = $switch.find('.switch__en');
       $btn2 = $switch.find('.switch__pl');
 
-
+      bindEvents();
     }
   };
 
   $(document).ready(function () {
     init();
+  });
+
+  var bindEvents = function () {
     switchClass();
     switchClassPl();
-  });
+  };
 
   var switchClass = function () {
     $btn.hover(function () {
